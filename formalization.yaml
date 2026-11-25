@@ -21,10 +21,13 @@ project:
     share of a small disc across the edge that lies in the tangent cone. It
     also proves the paper's two lemmas: Lemma 3, that pi, arctan(phi),
     arccos(1/sqrt 6) and arccos(sqrt(2/3)) are linearly independent over Q
-    (Niven's theorem in Mathlib and a field argument), and Lemma 2, that the
-    angles round an edge of a tiling by convex polytopes (locally finite,
-    not necessarily face to face) sum to 2 pi, each being a dihedral angle of
-    its tile, pi or 2 pi. The paper takes Lemma 2 from DICTO's earlier paper
+    (Niven's theorem in Mathlib and a field argument), and Lemma 2 in the
+    weaker form the proof of Theorem 4 needs: at an edge point x of a tile of
+    a tiling by convex polytopes (locally finite, not necessarily face to
+    face) there are finitely many tiles with numbers summing to 2 pi, the
+    given tile's being its angle at x and each other being pi, 2 pi, or a
+    dihedral angle of that tile read at some edge point of it, chosen
+    independently and not necessarily on the given edge. The paper takes Lemma 2 from DICTO's earlier paper
     "Aristotle's Pyramid"; it is the edge-counting step behind Debrunner's
     theorem (1980). The proof of Theorem 4 counts the angles round one edge:
     the coefficients of the three irrational angles must cancel within one
@@ -62,8 +65,10 @@ sources:
     note: >-
       Read (the statements formalized and their proofs). Theorem 4 (a), (b)
       are theorem4a_copies and theorem4b_copies, with every helper of the
-      paper, the truncated icosidodecahedron included; Lemma 3 is lemma3; Lemma 2 is lemma2, stated at one
-      nearby point of the edge rather than at all but finitely many points.
+      paper, the truncated icosidodecahedron included; Lemma 3 is lemma3; Lemma 2 is lemma2 in a weaker
+      form: each other tile's angle is a dihedral angle of that tile at some
+      edge point of it (chosen independently, not necessarily on the given
+      edge), pi or 2 pi. Only these values enter the proof of Theorem 4.
     author_endorsement: "participated"
   - title: "Aristotle's Pyramid"
     authors:
@@ -76,6 +81,41 @@ sources:
     relationship: "background"
     note: "Cited through the paper above, which takes its Lemma 2 from this Lemma 1."
     author_endorsement: "participated"
+  - title: "Families of tessellations of space by elementary polyhedra via retessellations of face-centered-cubic and related tilings"
+    authors:
+      - "R. Gabbrielli"
+      - "Y. Jiao"
+      - "S. Torquato"
+    id: "doi:10.1103/PhysRevE.86.041141"
+    type: "paper"
+    location: "Physical Review E 86 (2012) 041141, p. 3 (pairs of regular polyhedra, by dihedral angles)"
+    relationship: "background"
+    note: >-
+      Read (full text, pp. 1-3). The hand argument that excludes pieces from a
+      tiling by summing the dihedral angles round an edge, used there to show
+      that no pair of regular polyhedra other than tetrahedra and octahedra
+      fills space, periodically or not, face to face or not. The proof of
+      Theorem 4 of #117 uses the same kind of argument for different pieces
+      (the centre pyramids and truncations of the two icosahedral pairs, with
+      helpers). This entry formalizes #117's Theorem 4 and Lemmas 2 and 3 in
+      Lean; it does not formalize the 2012 result, and claims only the
+      formalization.
+    author_endorsement: "n/a"
+  - title: "On angles whose squared trigonometric functions are rational"
+    authors:
+      - "J. H. Conway"
+      - "C. Radin"
+      - "L. Sadun"
+    id: "doi:10.1007/PL00009463"
+    type: "paper"
+    location: "Discrete & Computational Geometry 22 (1999) 321-332"
+    relationship: "background"
+    note: >-
+      Abstract and bibliographic record read. The rational independence of the
+      icosahedral angles that the argument needs is in their angle basis;
+      Lemma 3 here is proved in Lean independently (Niven's theorem in Mathlib
+      and a field argument).
+    author_endorsement: "n/a"
   - title: "Über Zerlegungsgleichheit von Pflasterpolyedern mit Würfeln"
     authors:
       - "H. E. Debrunner"
@@ -182,11 +222,13 @@ fidelity:
     half-spaces) with interior points, covering space, with pairwise
     disjoint interiors, locally finite; the paper's finitely many kinds at
     finitely many scales is replaced by local finiteness, which it implies.
-    (3) Lemma 2 is stated at one point y of the same edge near the given
-    point (the angles: the tile's own angle at the given point, and for each
-    other tile through y a dihedral angle, pi or 2 pi), which is what the
-    proof of Theorem 4 uses; the paper states it for all but finitely many
-    points of the edge. (4) A similar copy is a positive scaling followed by
+    (3) Lemma 2 is weaker than the paper's: the given tile's angle is read at
+    the given point, but for each other tile the statement says only that its
+    number is pi, 2 pi, or a dihedral angle of that tile at some edge point of
+    that tile, each chosen independently and not necessarily on the given edge
+    or at a common point. This is what the proof of Theorem 4 uses (only the
+    set of dihedral angles of each piece enters). The paper states the count
+    at all but finitely many points of the edge, with every angle read there. (4) A similar copy is a positive scaling followed by
     an isometry (reflections allowed). (5) The solids are given by face
     normals and offsets: the dodecahedron, the icosahedron, their
     truncations, the truncated icosidodecahedron and the two centre pyramids

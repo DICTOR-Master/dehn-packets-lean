@@ -9,8 +9,9 @@ A tiling (`ConvexTiling`) covers 3-space with such pieces, with disjoint interio
 face to face. A copy of a piece is its image under a similarity: a motion, a reflection, a positive scaling.
 
 - **Lemma 3** (`lemma3`): π, α = arctan φ, β = arccos(1/√6) and γ = arccos(√(2/3)) are linearly independent over ℚ.
-- **Lemma 2** (`lemma2`): at a point inside an edge of a tiling, the dihedral angles of the tiles meeting there
-  (with π for a tile whose face passes through the point and 2π for one containing it inside) sum to 2π.
+- **Lemma 2** (`lemma2`), in the weaker form Theorem 4 needs: at a point inside an edge of a tile, finitely many tiles
+  carry numbers summing to 2π: the given tile's angle at that point, and for each other tile π, 2π, or a dihedral
+  angle of that tile read at some edge point of it (chosen independently, not necessarily on the given edge).
 - **Theorem 4 (a)** (`theorem4a_copies`): in a tiling by copies of the dodecahedron centre pyramid, the truncated
   icosahedron, the dodecahedron, the icosahedron, the truncated icosidodecahedron, the truncated octahedron, the
   truncated cuboctahedron, and any
