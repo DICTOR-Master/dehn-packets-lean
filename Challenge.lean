@@ -20,14 +20,15 @@ scaling under an isometry (reflections allowed).
    `ω` summing to 2π: `ω i` is the angle of tile `i` at `x`, each `ω j` a dihedral angle of tile `j`, or π, or 2π.
 3. `theorem4a_copies` (**Theorem 4 (a)**): in a tiling of ℝ³ by similar copies of the dodecahedron centre pyramid
    (`pyrDSet`), the truncated icosahedron (`tiSet`), the dodecahedron (`dhSet`), the icosahedron (`ihSet`), the
-   truncated octahedron (`toSet`), the truncated cuboctahedron (`tcoSet`), and convex polytopes whose dihedral angles
+   truncated icosidodecahedron (`tidSet`), the truncated octahedron (`toSet`), the truncated cuboctahedron (`tcoSet`),
+   and convex polytopes whose dihedral angles
    are all nonnegative rational multiples of π (`RationalAngles`), no tile is a copy of the pyramid or of the
    truncated icosahedron.
 4. `theorem4b_copies` (**Theorem 4 (b)**): the same for the icosahedron centre pyramid (`pyrISet`) and the truncated
    dodecahedron (`tdSet`).
 
 Each solid is the solution set of its face inequalities `⟪N k, x⟫ ≤ B k`, exact in ℚ(√5) or ℚ(√2) (the pyramids'
-apex is the origin). The truncated icosidodecahedron of the paper's helper list is not built here.
+apex is the origin); the truncated icosidodecahedron is built from coordinates in ℚ(√5) like the others.
 
 **Sources.** DICTO, *From Dehn Packets to Scutoids: How the Fullerene Star Fills Space*, Zenodo (2026),
 doi:10.5281/zenodo.24411660: Lemmas 2, 3 and Theorem 4 (a), (b). The set-defined angle is that of DICTO's *The Dehn
