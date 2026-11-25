@@ -28,11 +28,11 @@ project:
     "Aristotle's Pyramid"; it is the edge-counting step behind Debrunner's
     theorem (1980). The proof of Theorem 4 counts the angles round one edge:
     the coefficients of the three irrational angles must cancel within one
-    turn, and a weight argument removes the pieces one after another. Not
-    formalized: the truncated icosidodecahedron of the paper's helper list
-    (a library theorem covers it when its angles are given as a hypothesis);
-    Theorem 4 (c), on the smallest ring, is proved in the library but is not
-    in the Challenge; the rest of the paper (scutoid fillings, the Fullerene
+    turn, and a weight argument removes the pieces one after another. All
+    the paper's helpers are covered, the truncated icosidodecahedron
+    included, each built from exact coordinates. Not formalized in the
+    Challenge: Theorem 4 (c), on the smallest ring, is proved in the library
+    but is not in the Challenge; the rest of the paper (scutoid fillings, the Fullerene
     Star). Audience: researchers on tilings, space-filling polyhedra and
     scissors congruence, and Mathlib contributors.
   authors:
@@ -61,8 +61,8 @@ sources:
     relationship: "formalizes"
     note: >-
       Read (the statements formalized and their proofs). Theorem 4 (a), (b)
-      are theorem4a_copies and theorem4b_copies, without the truncated
-      icosidodecahedron; Lemma 3 is lemma3; Lemma 2 is lemma2, stated at one
+      are theorem4a_copies and theorem4b_copies, with every helper of the
+      paper, the truncated icosidodecahedron included; Lemma 3 is lemma3; Lemma 2 is lemma2, stated at one
       nearby point of the edge rather than at all but finitely many points.
     author_endorsement: "participated"
   - title: "Aristotle's Pyramid"
@@ -137,9 +137,9 @@ status:
     convex polytopes, in every 3-dimensional real inner product space);
     theorem4a_copies and theorem4b_copies (Theorem 4 (a), (b) for tilings of
     R^3 by similar copies of the named solids and convex polytopes whose
-    dihedral angles are nonnegative rational multiples of pi). Not
-    formalized: the truncated icosidodecahedron as a named helper; Theorem 4
-    (c) is in the library (Packets/Rings.lean), not in the Challenge.
+    dihedral angles are nonnegative rational multiples of pi; the helpers
+    include the truncated icosidodecahedron). Theorem 4 (c) is in the library
+    (Packets/Rings.lean), not in the Challenge.
   sorry_count: 0
   sorry_in_definitions: 0
   axioms: []
@@ -189,11 +189,10 @@ fidelity:
     points of the edge. (4) A similar copy is a positive scaling followed by
     an isometry (reflections allowed). (5) The solids are given by face
     normals and offsets: the dodecahedron, the icosahedron, their
-    truncations and the two centre pyramids (apex at the origin) in Q(sqrt
-    5), the truncated octahedron in Q, the truncated cuboctahedron in Q(sqrt
-    2). (6) A helper piece with rational angles has every dihedral angle
-    equal to q pi with q a nonnegative rational (RationalAngles). (7) The
-    truncated icosidodecahedron is left out of the Challenge's helper list.
+    truncations, the truncated icosidodecahedron and the two centre pyramids
+    (apex at the origin) in Q(sqrt 5), the truncated octahedron in Q, the
+    truncated cuboctahedron in Q(sqrt 2). (6) A helper piece with rational angles has every dihedral angle
+    equal to q pi with q a nonnegative rational (RationalAngles).
 
 review:
   status: "self-assessed"

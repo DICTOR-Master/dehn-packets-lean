@@ -170,6 +170,7 @@ noncomputable def pyrDN : Fin 6 → R3 :=
 /-- Offsets. -/
 noncomputable def pyrDB : Fin 6 → ℝ := ![(6 + 2 * √5), 0, 0, 0, 0, 0]
 
+/-- The solid. -/
 def pyrDSet : Set R3 := sol pyrDN pyrDB
 
 -- from GenTI.lean
@@ -187,6 +188,7 @@ noncomputable def tiN : Fin 32 → R3 :=
 /-- Offsets. -/
 noncomputable def tiB : Fin 32 → ℝ := ![(22 + 6 * √5), (22 + 6 * √5), (22 + 6 * √5), (22 + 6 * √5), (22 + 6 * √5), (22 + 6 * √5), (22 + 6 * √5), (22 + 6 * √5), (22 + 6 * √5), (22 + 6 * √5), (22 + 6 * √5), (22 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5)]
 
+/-- The solid. -/
 def tiSet : Set R3 := sol tiN tiB
 
 -- from GenPyrI.lean
@@ -197,6 +199,7 @@ noncomputable def pyrIN : Fin 4 → R3 :=
 /-- Offsets. -/
 noncomputable def pyrIB : Fin 4 → ℝ := ![(6 + 2 * √5), 0, 0, 0]
 
+/-- The solid. -/
 def pyrISet : Set R3 := sol pyrIN pyrIB
 
 -- from GenTD.lean
@@ -214,6 +217,7 @@ noncomputable def tdN : Fin 32 → R3 :=
 /-- Offsets. -/
 noncomputable def tdB : Fin 32 → ℝ := ![(10 + 6 * √5), (10 + 6 * √5), (10 + 6 * √5), (10 + 6 * √5), (10 + 6 * √5), (10 + 6 * √5), (10 + 6 * √5), (10 + 6 * √5), (10 + 6 * √5), (10 + 6 * √5), (10 + 6 * √5), (10 + 6 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5), (16 + 4 * √5)]
 
+/-- The solid. -/
 def tdSet : Set R3 := sol tdN tdB
 
 -- from GenDH.lean
@@ -226,6 +230,7 @@ noncomputable def dhN : Fin 12 → R3 :=
 /-- Offsets. -/
 noncomputable def dhB : Fin 12 → ℝ := ![(6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5)]
 
+/-- The solid. -/
 def dhSet : Set R3 := sol dhN dhB
 
 -- from GenIH.lean
@@ -240,6 +245,7 @@ noncomputable def ihN : Fin 20 → R3 :=
 /-- Offsets. -/
 noncomputable def ihB : Fin 20 → ℝ := ![(6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5), (6 + 2 * √5)]
 
+/-- The solid. -/
 def ihSet : Set R3 := sol ihN ihB
 
 -- from GenTO.lean
@@ -253,6 +259,7 @@ noncomputable def toN : Fin 14 → R3 :=
 /-- Offsets. -/
 noncomputable def toB : Fin 14 → ℝ := ![2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3]
 
+/-- The solid. -/
 def toSet : Set R3 := sol toN toB
 
 -- from GenTCO.lean
@@ -269,7 +276,34 @@ noncomputable def tcoN : Fin 26 → R3 :=
 /-- Offsets. -/
 noncomputable def tcoB : Fin 26 → ℝ := ![(2 + 3 * √2), (2 + 3 * √2), (2 + 3 * √2), (2 + 3 * √2), (2 + 3 * √2), (2 + 3 * √2), (2 + 3 * √2), (2 + 3 * √2), (2 + 3 * √2), (2 + 3 * √2), (2 + 3 * √2), (2 + 3 * √2), (3 + 3 * √2), (3 + 3 * √2), (3 + 3 * √2), (3 + 3 * √2), (3 + 3 * √2), (3 + 3 * √2), (3 + 3 * √2), (3 + 3 * √2), (1 + 2 * √2), (1 + 2 * √2), (1 + 2 * √2), (1 + 2 * √2), (1 + 2 * √2), (1 + 2 * √2)]
 
+/-- The solid. -/
 def tcoSet : Set R3 := sol tcoN tcoB
+
+-- from GenTID.lean
+/-- Outward face normals. -/
+noncomputable def tidN : Fin 62 → R3 :=
+  ![!₂[0, 2, (1 + √5)], !₂[0, 2, (-1 - √5)], !₂[0, (-2), (1 + √5)], !₂[0, (-2), (-1 - √5)],
+    !₂[(1 + √5), 0, 2], !₂[(1 + √5), 0, (-2)], !₂[(-1 - √5), 0, 2], !₂[(-1 - √5), 0, (-2)],
+    !₂[2, (1 + √5), 0], !₂[2, (-1 - √5), 0], !₂[(-2), (1 + √5), 0], !₂[(-2), (-1 - √5), 0],
+    !₂[2, 2, 2], !₂[2, 2, (-2)], !₂[2, (-2), 2], !₂[2, (-2), (-2)],
+    !₂[(-2), 2, 2], !₂[(-2), 2, (-2)], !₂[(-2), (-2), 2], !₂[(-2), (-2), (-2)],
+    !₂[0, (1 + √5), (-1 + √5)], !₂[0, (1 + √5), (1 - √5)], !₂[0, (-1 - √5), (-1 + √5)], !₂[0, (-1 - √5), (1 - √5)],
+    !₂[(-1 + √5), 0, (1 + √5)], !₂[(-1 + √5), 0, (-1 - √5)], !₂[(1 - √5), 0, (1 + √5)], !₂[(1 - √5), 0, (-1 - √5)],
+    !₂[(1 + √5), (-1 + √5), 0], !₂[(1 + √5), (1 - √5), 0], !₂[(-1 - √5), (-1 + √5), 0], !₂[(-1 - √5), (1 - √5), 0],
+    !₂[2, 0, 0], !₂[(-2), 0, 0], !₂[0, 2, 0], !₂[0, (-2), 0],
+    !₂[0, 0, 2], !₂[0, 0, (-2)], !₂[2, (3 + √5), (1 + √5)], !₂[2, (3 + √5), (-1 - √5)],
+    !₂[2, (-3 - √5), (1 + √5)], !₂[2, (-3 - √5), (-1 - √5)], !₂[(-2), (3 + √5), (1 + √5)], !₂[(-2), (3 + √5), (-1 - √5)],
+    !₂[(-2), (-3 - √5), (1 + √5)], !₂[(-2), (-3 - √5), (-1 - √5)], !₂[(1 + √5), 2, (3 + √5)], !₂[(1 + √5), 2, (-3 - √5)],
+    !₂[(1 + √5), (-2), (3 + √5)], !₂[(1 + √5), (-2), (-3 - √5)], !₂[(-1 - √5), 2, (3 + √5)], !₂[(-1 - √5), 2, (-3 - √5)],
+    !₂[(-1 - √5), (-2), (3 + √5)], !₂[(-1 - √5), (-2), (-3 - √5)], !₂[(3 + √5), (1 + √5), 2], !₂[(3 + √5), (1 + √5), (-2)],
+    !₂[(3 + √5), (-1 - √5), 2], !₂[(3 + √5), (-1 - √5), (-2)], !₂[(-3 - √5), (1 + √5), 2], !₂[(-3 - √5), (1 + √5), (-2)],
+    !₂[(-3 - √5), (-1 - √5), 2], !₂[(-3 - √5), (-1 - √5), (-2)]]
+
+/-- Offsets. -/
+noncomputable def tidB : Fin 62 → ℝ := ![(10 + 10 * √5), (10 + 10 * √5), (10 + 10 * √5), (10 + 10 * √5), (10 + 10 * √5), (10 + 10 * √5), (10 + 10 * √5), (10 + 10 * √5), (10 + 10 * √5), (10 + 10 * √5), (10 + 10 * √5), (10 + 10 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (18 + 6 * √5), (14 + 2 * √5), (14 + 2 * √5), (14 + 2 * √5), (14 + 2 * √5), (14 + 2 * √5), (14 + 2 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5), (24 + 16 * √5)]
+
+/-- The solid. -/
+def tidSet : Set R3 := sol tidN tidB
 
 end
 
@@ -283,16 +317,16 @@ def RationalAngles (P : Set R3) : Prop := ∀ θ, EdgeAngle P θ → ∃ q : ℚ
 /-- **Theorem 4 (a)** for tilings by copies, with no hypothesis. -/
 theorem theorem4a_copies {ι : Type*} (T : ConvexTiling ι R3)
     (hk : ∀ i, SimilarCopy (T.P i) pyrDSet ∨ SimilarCopy (T.P i) tiSet ∨ SimilarCopy (T.P i) dhSet ∨
-      SimilarCopy (T.P i) ihSet ∨ SimilarCopy (T.P i) toSet ∨ SimilarCopy (T.P i) tcoSet ∨
-      RationalAngles (T.P i)) (i : ι) :
+      SimilarCopy (T.P i) ihSet ∨ SimilarCopy (T.P i) tidSet ∨ SimilarCopy (T.P i) toSet ∨
+      SimilarCopy (T.P i) tcoSet ∨ RationalAngles (T.P i)) (i : ι) :
     ¬ SimilarCopy (T.P i) pyrDSet ∧ ¬ SimilarCopy (T.P i) tiSet := by
   exact Packets.theorem4a_copies ⟨T.P, T.poly, T.nonempty_interior, T.cover, T.disjoint, T.locallyFinite⟩ hk i
 
 /-- **Theorem 4 (b)** for tilings by copies, with no hypothesis. -/
 theorem theorem4b_copies {ι : Type*} (T : ConvexTiling ι R3)
     (hk : ∀ i, SimilarCopy (T.P i) pyrISet ∨ SimilarCopy (T.P i) tdSet ∨ SimilarCopy (T.P i) dhSet ∨
-      SimilarCopy (T.P i) ihSet ∨ SimilarCopy (T.P i) toSet ∨ SimilarCopy (T.P i) tcoSet ∨
-      RationalAngles (T.P i)) (i : ι) :
+      SimilarCopy (T.P i) ihSet ∨ SimilarCopy (T.P i) tidSet ∨ SimilarCopy (T.P i) toSet ∨
+      SimilarCopy (T.P i) tcoSet ∨ RationalAngles (T.P i)) (i : ι) :
     ¬ SimilarCopy (T.P i) pyrISet ∧ ¬ SimilarCopy (T.P i) tdSet := by
   exact Packets.theorem4b_copies ⟨T.P, T.poly, T.nonempty_interior, T.cover, T.disjoint, T.locallyFinite⟩ hk i
 
