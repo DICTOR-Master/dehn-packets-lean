@@ -12,7 +12,8 @@ face to face. A copy of a piece is its image under a similarity: a motion, a ref
 - **Lemma 2** (`lemma2`): at a point inside an edge of a tiling, the dihedral angles of the tiles meeting there
   (with π for a tile whose face passes through the point and 2π for one containing it inside) sum to 2π.
 - **Theorem 4 (a)** (`theorem4a_copies`): in a tiling by copies of the dodecahedron centre pyramid, the truncated
-  icosahedron, the dodecahedron, the icosahedron, the truncated octahedron, the truncated cuboctahedron, and any
+  icosahedron, the dodecahedron, the icosahedron, the truncated icosidodecahedron, the truncated octahedron, the
+  truncated cuboctahedron, and any
   convex pieces whose dihedral angles are all rational multiples of π, no tile is a copy of the pyramid or of the
   truncated icosahedron.
 - **Theorem 4 (b)** (`theorem4b_copies`): the same for the icosahedron centre pyramid and the truncated dodecahedron.
